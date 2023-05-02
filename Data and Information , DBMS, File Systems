@@ -1,0 +1,100 @@
+......................................................................Data and Information......................................................................
+
+What is data ?
+-> It is the collection of raw bytes of text,images, figures, symbols, etc.
+-> Stored in memory as bits/bytes. (0 and 1) in computer memory.
+-> Images, text, values are stored in bits.
+   Images are collection of bytes (0 , 1).
+   Integers, text are collection of bytes.
+
+Types of data : 
+Quantitative -> numbers, weight, volume, area, etc.
+Qualitative  -> Descriptive, Name, gender, color, etc.
+
+Data unless convey information has no use.
+
+Data + Process/Interpret = Information
+Processed data which conveys some meaning is called information
+Information is processed + organized + structured data.
+
+Data vs Information
+-> Data is collection of facts . Information puts those facts into context.
+-> Data is raw and unorganised . Information is organized.
+-> Data is meaningless. Information is when insightful meaning is added to data.
+-> Data does not depend on information. Information depends on data.
+-> Data is not used for decision-making. Information is used for decision-making.
+-> Data is mainly numbers, texts, figures, graphs, statistics. Information is presented through words, language, thoughts, ideas.
+
+E.g. in social media post, we can analyse our data through likes count.
+Facebook - 5 likes
+Instagram - 200 likes
+LinkedIn -  3 likes
+Twitter - 100 likes
+So, in above likes count data, we conclude that instagram is the best platform to post stories so, we start making content as reels, stories, etc.
+
+E.g in Amazon, when we purchase a product then it asks for feedback after few days of purchase.
+This feedback is taken as data (raw text in bytes, we love this product, we hate this product, etc.)
+Then feedback is processed from data using sentiment analysis,feedback inputs, etc. to find out [ customer ratings, customer age group, customer recommendation, etc. ]
+Now, stakeholders make decision based on processed feedback information.
+
+-> Data is the new oil.
+
+...................................................................DATA BASE..................................................................................
+
+What is Data Base ?
+-> Database is an electronic place/ system where data is stored in a way and it is easily accessed, managed and updated.
+-> To use this data, we need DATABASE MANAGEMENT SYSTEM. 
+
+-> It is a collection of interrelated data and a set of instructions to access the data.
+1. Data 
+2. Set of programs like CRUD (create, read, update, delete)
+
+
+DataBase ----->   DBMS software -----------> client, app, website.
+Modern system contains Database and DBMS software integreted.
+
+..............................................................FILE SYSTEM vs DBMS..............................................................................
+
+1. Earlier file system was used.
+2. Problem with file system is its accessibility if we are working on huge set of datas.
+
+What is file system ?
+A file system is a software that organizes and manages files on a storage media, whereas a database management system (DBMS) is a software that allows you to access, create, and administer databases.
+
+File System vs DBMS 
+Suppose in a banking management system, we have savings account feature. After few years, we got current account functionality.
+
+Problems in File System:
+
+1. Data Redundancy and inconsistency : create new programs for current account. 
+If same customer opens a current account who is also an existing customer of savings account. 
+Now same data is saved in both files ( Data redundancy ). Now if he changes address in savings account, it is not reflected back to current account ( Data inconsistency ).
+
+Also, File systems are also duplicated at times, leading to redundancy of data, which in turn leads to occupying of more storage.Whereas DBMS controls redundancy, as one item is stored at only one place in a DBMS, so there is no redundancy or inconsistency, thus saves a lot of storage space!
+
+
+2. Difficulty in accessing data : If we want to generate a list of customers in a bank with pincode 201002, result of both methods would be unsatisfactory, i.e., file processing systems don't allow needed data to be retrieved in a convenient and efficient manner.
+On the other hand, DBMS uses queries, which obviously provide an easy route to search for the required data. Moreover, they represent complex relationships among data easily, using the concept of foreign keys. Now, if we were to look for the bank customer records in a DBMS, it would be very easy, and could be done in just a single SQL query!
+
+
+3. Data isolation : Suppose earlier programmer stores files are stored in  .dat format 
+New programmer stores files in .txt format. It becomes difficult to retrieve data. 
+( Bad Data isolation )
+
+
+4. Integrity problems : If any external rule of RBI comes into picture, to solve newer constraints we have to again rewrite the function.In the case of FPS, data is scattered in files, which may be in different formats which makes it pretty difficult to write programs to retrieve appropriate data. Whereas DBMS enforces integrity constraints, which means it enforces and provides capabilities for defining constraints that must hold for data, or in other words, to specify the data type for each data item!
+
+
+5. Atomicity Problems : If a system fails, it is possible that money may be debited from the sender's account and not received by the receiver. Therefore, you can see how this would cause an inconsistent state of transactions. DBMS solves this problem by following the atomicity property, which means that a transaction or operation should either be fully complete, or should not start at all!
+
+
+6. Concurrent-Access : When multiple users update data simultaneously, the concurrent updates may result in inconsistent data. Example: Two customers withdraw funds of Rs. 100 and Rs. 50 from a joint account with a balance of Rs. 500. Then, the account may contain Rs. 400 or Rs. 450 depending on who does the last transaction, rather than the actual current amount, i.e., Rs. 350.
+And on the other hand, DBMS has concurrency control mechanism. Concurrency control regulates the number of people who can access a database at the same time. It keeps data centralized and prohibits two people from altering the same record at the same time.
+
+
+7. Security Issues : File System has lesser security than DBMS.
+
+8. Backup and Recovery : Sometimes, data is lost. This could happen due to software failures or other reasons. A file processing system is not immune to such problems.
+The same thing could happen in DBMS, but it does provide users the facilities of backup and recovery of data so that the valuable data isn't lost.
+
+9. Costs : The costs of using a DBMS include -> High initial investment in hardware and training. Providing security recovery and integrity functions.
